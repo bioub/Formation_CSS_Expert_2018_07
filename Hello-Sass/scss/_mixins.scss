@@ -1,0 +1,4 @@
+@mixin roundSomeBorder($size: 10px) {
+  border-top-right-radius: $size;
+  border-bottom-left-radius: $size;
+}

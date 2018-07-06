@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background-color: lightgrey; }
+
+.container {
+  width: 960px;
+  background-color: white;
+  margin: 0 auto; }
+
+header {
+  background-color: #ffdb99;
+  border-bottom: 5px solid orange; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px; }
+  .gallery div {
+    background-color: #ffdb99;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px; }
+    .gallery div:hover {
+      background-color: orange; }
+
+/*# sourceMappingURL=main.css.map */

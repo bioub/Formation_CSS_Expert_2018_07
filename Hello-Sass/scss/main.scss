@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  margin: 0;
+  background-color: $mainColor;
+}
+
+.container {
+  width: 960px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+header {
+  background-color: lighten($secondaryColor, 30%);
+  border-bottom: 5px solid $secondaryColor;
+}
+
+@import 'gallery';

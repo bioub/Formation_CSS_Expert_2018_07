@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(5, 100px);
+      grid-auto-rows: minmax(100px, 1fr);
+      min-height: 100vh;
+      gap: 10px; /* ancienne grid-gap */
+    }
+
+    .container > div {
+      background: oldlace;
+      text-align: center;
+      line-height: 100px;
+      font-size: 2rem;
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        grid-template-columns: repeat(2, 100px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+  </div>
+</body>
+
+</html>

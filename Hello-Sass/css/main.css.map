@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/_variables.scss",
+		"../scss/_mixins.scss",
+		"../scss/_gallery.scss"
+	],
+	"sourcesContent": [
+		"@import 'variables';\n@import 'mixins';\n\nbody {\n  margin: 0;\n  background-color: $mainColor;\n}\n\n.container {\n  width: 960px;\n  background-color: white;\n  margin: 0 auto;\n}\n\nheader {\n  background-color: lighten($secondaryColor, 30%);\n  border-bottom: 5px solid $secondaryColor;\n}\n\n@import 'gallery';",
+		"$mainColor: lightgrey;\n$secondaryColor: orange;\n$galleryColCount: 4;\n$defaultMargin: 10px;\n",
+		"@mixin roundSomeBorder($size: 10px) {\n  border-top-right-radius: $size;\n  border-bottom-left-radius: $size;\n}",
+		".gallery {\n  display: grid;\n  grid-template-columns: repeat($galleryColCount, 1fr);\n  grid-gap: $defaultMargin;\n\n  div {\n    background-color: lighten($secondaryColor, 30%);\n    @include roundSomeBorder(3px);\n\n    &:hover {\n      background-color: $secondaryColor;\n    }\n  }\n\n}\n\n"
+	],
+	"names": [],
+	"mappings": "AAGA,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;EACT,gBAAgB,ECLN,SAAS,GDMpB;;AAED,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,KAAK;EACvB,MAAM,EAAE,MAAM,GACf;;AAED,AAAA,MAAM,CAAC;EACL,gBAAgB,EAAE,OAA6B;EAC/C,aAAa,EAAE,GAAG,CAAC,KAAK,CCfT,MAAM,GDgBtB;;AGjBD,AAAA,QAAQ,CAAC;EACP,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAA6B;EACpD,QAAQ,EFAM,IAAI,GEWnB;EAdD,AAKE,QALM,CAKN,GAAG,CAAC;IACF,gBAAgB,EAAE,OAA6B;IDLjD,uBAAuB,ECMI,GAAG;IDL9B,yBAAyB,ECKE,GAAG,GAK7B;IAZH,AASI,QATI,CAKN,GAAG,AAIA,MAAM,CAAC;MACN,gBAAgB,EFTL,MAAM,GEUlB"
+}

@@ -1,0 +1,16 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat($galleryColCount, 1fr);
+  grid-gap: $defaultMargin;
+
+  div {
+    background-color: lighten($secondaryColor, 30%);
+    @include roundSomeBorder(3px);
+
+    &:hover {
+      background-color: $secondaryColor;
+    }
+  }
+
+}
+

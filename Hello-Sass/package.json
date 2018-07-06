@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "node-sass": "^4.9.1"
+  },
+  "scripts": {
+    "watch:scss": "node-sass --watch --recursive --output css --source-map true --source-map-contents scss",
+    "build:scss": "node-sass --recursive --output css --output-style compressed scss"
+  }
+}
