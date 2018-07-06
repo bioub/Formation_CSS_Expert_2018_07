@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    @media (orientation: portrait) {
+      .portrait {
+        display: block;
+      }
+      .paysage {
+        display: none;
+      }
+    }
+
+    @media (orientation: landscape) {
+      .portrait {
+        display: none;
+      }
+      .paysage {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="portrait">
+    Veuillez mettre votre écran en mode paysage
+  </div>
+  <div class="paysage">
+    <h2>Bienvenue sur notre site</h2>
+  </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .bg {
+      background-color: blue;
+    }
+
+    @media (max-width: 500px) {
+      .bg {
+        background-color: red;
+      }
+    }
+
+    .container > div {
+      float: left;
+    }
+
+    .container > div:first-child {
+      background-color: yellow;
+      width: 200px;
+    }
+
+    .container > div:last-child {
+      background-color: orange;
+      width: calc(100% - 200px);
+      
+    }
+
+    @media (max-width: 500px) {
+      .container > div {
+        float: none;
+        width: 100% !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg">
+    Hello
+  </div>
+
+  <div class="container">
+    <div>1</div>
+    <div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ipsa doloribus repellendus ratione, tenetur dicta quidem repellat, rerum temporibus vel aliquid quam. Doloribus commodi, distinctio consequuntur itaque nostrum blanditiis quae.</p>
+      <p>Accusamus autem reprehenderit maxime voluptatem dicta fuga nisi aut! Eos quod autem, nihil quaerat vel provident ipsum aperiam, quis quo iste adipisci eveniet ducimus minus omnis dolore aliquid corrupti praesentium!</p>
+      <p>Ea, neque eos. Quas aspernatur magni, necessitatibus saepe eaque alias veritatis sint. Iusto quis repellat saepe, exercitationem similique expedita voluptates numquam adipisci placeat quas voluptatum non quia voluptatibus, beatae eum.</p>
+    </div>
+  </div>
+</body>
+</html>
